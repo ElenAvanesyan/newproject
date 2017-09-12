@@ -1,0 +1,30 @@
+<head>
+	<!-- <link rel="stylesheet" type="text/css" href="/./main.css"> -->
+</head>
+<body>
+	<div class="container">
+			<h4>APP_NAME</h4>
+			<div class="menu">
+				<div class="navigation-bar">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<a routerLink="/home">Home</a>
+				</div>
+				<div class="navigation-bar">
+					<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+					<a routerLink="/appointment">Appointments</a>
+				</div>
+				<div class="navigation-bar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+					<a routerLink="/">Personal Notes</a>
+				</div>
+				<div class="navigation-bar">
+					<i class="fa fa-comments-o" aria-hidden="true"></i>
+					<a routerLink="/messages">Messages</a>
+				</div>
+			</div>
+				<div class="greyspace">
+					<div class="selected">
+							<router-outlet></router-outlet>
+						</div>
+				</div>
+	</div>
+</body>
